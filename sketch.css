@@ -1,0 +1,45 @@
+
+*{
+    background-color:cornflowerblue;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.header button{
+    background-color: lightpink;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+.forCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+}
+
+.box{
+    box-sizing: border-box;
+    background-color: #000000;
+    border: 0.005px solid #aaaaaa;
+}
+
+.newbox{
+    box-sizing: border-box;
+    border: 0.005px solid #aaaaaa;
+}
+
+.container{
+    background-color:#000000;
+    width: 360px;
+    height: 360px;
+}
