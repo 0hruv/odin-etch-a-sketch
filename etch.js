@@ -1,6 +1,5 @@
 let container = document.querySelector(".container");
 let forCenter = document.querySelector(".forCenter");
-forCenter.appendChild(container);
 
 buttonChangesSize();
 
@@ -49,7 +48,7 @@ function createGrid(size)
                     let hexString = "#" + randomColour.toString(16);
                     
                     box.style.backgroundColor = `${hexString}`;
-
+                        
                     }
                 
                 })

@@ -1,5 +1,5 @@
 
-*{
+body{
     background-color:cornflowerblue;
 }
 
@@ -29,8 +29,8 @@
 
 .box{
     box-sizing: border-box;
-    background-color: #000000;
-    border: 0.005px solid #aaaaaa;
+    background-color:black;
+    /* border: 0.005px solid #aaaaaa; */
 }
 
 .newbox{
@@ -39,7 +39,7 @@
 }
 
 .container{
-    background-color:#000000;
+    background-color:black;
     width: 360px;
     height: 360px;
 }
