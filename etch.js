@@ -31,7 +31,7 @@ function createGrid(size)
     );
     for (let j = 0 ; j  < size ; j++)
     {
-        let x = (360/size) + "px";
+        let x = (480/size) + "px";
         let row = document.createElement("div");
         row.className = "row";
         row.setAttribute("style",`height:${x}`);
