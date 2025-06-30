@@ -24,6 +24,11 @@ function buttonChangesSize()
 
 function createGrid(size)
 {
+    
+
+    const grid = Array.from({ length: size }, () =>
+    Array.from({ length: size }, () => 0)
+    );
     for (let j = 0 ; j  < size ; j++)
     {
         let x = (360/size) + "px";
@@ -43,12 +48,22 @@ function createGrid(size)
                     {
 
                     box.className = "newbox";
-
-                    let randomColour = Math.floor(Math.random()*16777215);
-                    let hexString = "#" + randomColour.toString(16);
                     
-                    box.style.backgroundColor = `${hexString}`;
-                        
+                    let clr = new Array(3);
+
+                    for (let obj = 0 ;  obj < 3 ; obj++)
+                    {
+                     clr[obj] = Math.floor(Math.random()*255);  
+                    }
+
+                    let back = `rgb(${clr[0]},${clr[1]},${clr[2]})`;
+                    box.style.backgroundColor = back;
+                    }
+
+                    else if(box.className == "newbox")
+                    {
+                        grid[j][i] += 0.1;
+                        box.style.filter = `brightness(${1-grid[j][i]})`;
                     }
                 
                 })
